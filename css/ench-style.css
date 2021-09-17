@@ -7,6 +7,9 @@ How properties are ordered:
 */
 
 body {
+  padding: 10px 0;
+  margin: auto;
+  width: 50%;
   background-color: #E3DEB3;
 }
 
