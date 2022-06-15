@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display');
+
+html {
+  height: 100%;
+  min-width: 280px;
+}
+
+body {
+  margin-top: 5rem;
+  padding: 0 1.5rem 1.5rem;
+  font: 16px / 1.5 serif;
+  background-color: #e3d3b3;
+}
