@@ -172,10 +172,9 @@ nav .contents-shown {
   visibility: visible;
 }
 
-h1,
-h2,
-h3,
-th {
+nav .more-recipes-button,
+h1, h2,
+h3, th {
   font-family: 'Playfair Display', serif;
 }
 
