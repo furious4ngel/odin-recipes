@@ -172,8 +172,76 @@ nav .contents-shown {
   visibility: visible;
 }
 
+h1,
+h2,
+h3,
+th {
+  font-family: 'Playfair Display', serif;
+}
+
 h1 {
   text-align: center;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.description img {
+  display: block;
+  height: 350px;
+  width: 100%;
+  max-width: 350px;
+  outline: 4px solid #480a24;
+  object-fit: cover;
+}
+
+.description h2,
+.description p {
+  margin: 0;
+}
+
+.description p {
+  max-width: 60ch;
+  font-style: italic;
+}
+
+.recipe-details {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  width: 100%;
+  border-top: 1px solid #480a2463;
+  border-bottom: 1px solid #480a2463;
+}
+
+.recipe-details table {
+  width: 350px;
+  border-collapse: collapse;
+}
+
+.recipe-details caption {
+  margin-bottom: 1rem;
+}
+
+.recipe-details tbody {
+  white-space: nowrap;
+}
+
+.recipe-details tr:not(:last-child) {
+  border-bottom: 1px solid #480a2463;
+}
+
+.recipe-details th,
+.recipe-details td {
+  padding: 0.5rem;
+}
+
+.recipe-details th {
+  text-align: left;
 }
 
 @media only screen and (min-width: 800px) {
