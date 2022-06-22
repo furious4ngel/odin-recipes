@@ -309,6 +309,34 @@ h1 {
   font-weight: bold;
 }
 
+footer {
+  margin-top: 1rem;
+}
+
+footer p {
+  margin: 0;
+  font-style: italic;
+}
+
+footer a {
+  color: #480a24;
+}
+
+footer a:focus {
+  outline: 2px solid #480a24;
+}
+
+footer a:hover {
+  text-decoration: none;
+  background-color: #1d4249;
+  color: #e3d3b3;
+}
+
+footer a:active {
+  background-color: #2c626d;
+  color: #e3d3b3;
+}
+
 @media only screen and (min-width: 800px) {
   nav .accordion {
     left: initial;
