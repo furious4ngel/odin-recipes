@@ -4,10 +4,6 @@ const navButton = document.querySelector('.nav-button');
 const recipesButton = document.querySelector('.more-recipes-button');
 const recipesIcon = document.querySelector('.more-recipes-button span');
 
-const steps = [...document.querySelectorAll('ol li')];
-let i = 1;
-steps.forEach(step => step.children[0].textContent = i++);
-
 navButton.addEventListener('click', () => {
   nav.classList.toggle('contents-shown');
 
