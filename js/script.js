@@ -1,36 +1,20 @@
-const nav = document.querySelector('.accordion');
-const recipes = document.querySelector('.more-recipes-list');
-const navButton = document.querySelector('.nav-button');
-const recipesButton = document.querySelector('.more-recipes-button');
-const recipesIcon = document.querySelector('.more-recipes-button span');
+const landmarks = document.querySelectorAll('header, nav');
+let lastPosition = 0;
 
-navButton.addEventListener('click', () => {
-  nav.classList.toggle('contents-shown');
+document.addEventListener('scroll', () => {
+  let currentPosition = window.scrollY;
 
-  if (navButton.textContent === 'menu') {
-    navButton.textContent = 'close';
-    navButton.ariaLabel = 'Close navigation';
+  if (currentPosition < 88 || lastPosition > currentPosition) {
+    landmarks.forEach(landmark => {
+      landmark.classList.remove('hide-content');
+      landmark.classList.add('show-content');
+    });
   } else {
-    navButton.textContent = 'menu';
-    navButton.ariaLabel = 'Open navigation';
+    landmarks.forEach(landmark => {
+      landmark.classList.remove('show-content');
+      landmark.classList.add('hide-content');
+    });
   }
 
-  if (nav.classList.contains('contents-shown') === false) {
-    recipes.classList.remove('contents-shown');
-    recipesIcon.textContent = 'add';
-  }
-});
-
-recipesButton.addEventListener('click', () => {
-  recipes.classList.toggle('contents-shown');
-
-  if (recipesIcon.textContent === 'add') {
-    recipesIcon.textContent = 'remove';
-    recipesButton.ariaLabel = 'Close more recipes section';
-    recipesButton.ariaExpanded = 'true';
-  } else {
-    recipesIcon.textContent = 'add';
-    recipesButton.ariaLabel = 'Open more recipes section';
-    recipesButton.ariaExpanded = 'false';
-  }
+  lastPosition = currentPosition;
 });
