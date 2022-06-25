@@ -24,35 +24,6 @@ body {
   background-color: #e3d3b3;
 }
 
-header .logo,
-nav a,
-h1,
-h2,
-h3,
-th,
-.ingredients-and-steps ol li::marker {
-  font-family: 'Playfair Display', serif;
-}
-
-header .logo,
-nav a span,
-.ingredients-and-steps ol li::marker {
-  font-weight: bold;
-}
-
-h2,
-p {
-  margin: 0;
-}
-
-h1 {
-  text-align: center;
-}
-
-p {
-  font-style: italic;
-}
-
 header,
 nav {
   transition:
@@ -73,7 +44,6 @@ header {
   z-index: 2;
   background-color: #480a24;
   box-shadow: 0 5px 10px #00000026;
-  color: #dbf3f3;
 }
 
 header .logo {
@@ -81,10 +51,12 @@ header .logo {
   align-items: center;
   gap: 0.4rem;
   padding: 0 0.8rem;
+  font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
+  font-weight: bold;
   text-decoration: none;
   white-space: nowrap;
-  color: inherit;
+  color: #dbf3f3;
 }
 
 header .logo:focus {
@@ -107,7 +79,6 @@ nav {
   position: sticky;
   top: -96px;
   z-index: 1;
-  color: #480a24;
 }
 
 nav ul {
@@ -128,11 +99,12 @@ nav a {
   display: flex;
   align-items: center;
   padding: 0.5rem 1rem;
+  font-family: 'Playfair Display', serif;
   text-decoration: none;
   white-space: nowrap;
   background-color: #8cd9d9;
   border: 1px solid #194d4d26;
-  color: inherit;
+  color: #480a24;
 }
 
 nav a:focus {
@@ -181,11 +153,26 @@ main {
       border-right-color 150ms linear;
 }
 
+h1,
+h2,
+h3,
+th {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  text-align: center;
+}
+
 .description {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 1rem;
+}
+
+.description h2 {
+  margin: 0;
 }
 
 .description img {
@@ -196,7 +183,9 @@ main {
 }
 
 .description p {
+  margin: 0;
   max-width: 60ch;
+  font-style: italic;
 }
 
 .recipe-details {
@@ -295,15 +284,25 @@ main {
   padding-left: 5px;
 }
 
+.ingredients-and-steps ol li::marker {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+
 footer {
   margin: 0 auto;
   padding: 1rem 1.5rem;
   max-width: 800px;
+}
+
+footer p,
+footer a {
   color: #480a24;
 }
 
-footer * {
-  color: inherit;
+footer p {
+  margin: 0;
+  font-style: italic;
 }
 
 footer a:focus {
