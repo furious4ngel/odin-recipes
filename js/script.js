@@ -1,19 +1,16 @@
-const landmarks = document.querySelectorAll('header, nav');
+const header = document.querySelector('header');
+const nav = document.querySelector('nav');
 let lastPosition = 0;
 
 document.addEventListener('scroll', () => {
   let currentPosition = window.scrollY;
 
-  if (currentPosition < 88 || lastPosition > currentPosition) {
-    landmarks.forEach(landmark => {
-      landmark.classList.remove('hide-content');
-      landmark.classList.add('show-content');
-    });
+  if (lastPosition > currentPosition) {
+    header.classList.add('show-header');
+    nav.classList.add('show-nav');
   } else {
-    landmarks.forEach(landmark => {
-      landmark.classList.remove('show-content');
-      landmark.classList.add('hide-content');
-    });
+    header.classList.remove('show-header');
+    nav.classList.remove('show-nav');
   }
 
   lastPosition = currentPosition;
