@@ -78,15 +78,28 @@ header {
 }
 
 header .logo {
+  display: flex;
+  gap: 0.4rem;
   padding: 0.2rem 0.5rem;
   font-size: 1.4rem;
   text-decoration: none;
-  color: #e3d3b3;
+  color: #dbf3f3;
 }
 
 header .logo:focus {
-  outline-color: #e3d3b3;
+  outline-color: #dbf3f3;
   outline-offset: -2px;
+}
+
+header img {
+  transition:
+      transform
+      200ms
+      cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+header .logo:hover img {
+  transform: rotate(38deg);
 }
 
 nav {
