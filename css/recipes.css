@@ -22,7 +22,6 @@ body {
   margin: 0;
   font: 16px / 1.5 serif;
   background-color: #e3d3b3;
-  color: #480a24;
 }
 
 header .logo,
@@ -54,10 +53,6 @@ p {
   font-style: italic;
 }
 
-a {
-  color: #480a24;
-}
-
 header,
 nav {
   transition: transform 400ms ease-in-out;
@@ -75,6 +70,7 @@ header {
   z-index: 2;
   background-color: #480a24;
   box-shadow: 0 5px 10px #00000036;
+  color: #dbf3f3;
 }
 
 header .logo {
@@ -83,7 +79,7 @@ header .logo {
   padding: 0.2rem 0.5rem;
   font-size: 1.4rem;
   text-decoration: none;
-  color: #dbf3f3;
+  color: inherit;
 }
 
 header .logo:focus {
@@ -106,6 +102,7 @@ nav {
   position: sticky;
   top: 48px;
   z-index: 1;
+  color: #480a24;
 }
 
 nav ul {
@@ -128,8 +125,9 @@ nav a {
   padding: 0.5rem 1rem;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #80bfcb;
-  border: 1px solid #1d424936;
+  background-color: #8cd9d9;
+  border: 1px solid #194d4d26;
+  color: inherit;
 }
 
 nav a:focus {
@@ -138,13 +136,11 @@ nav a:focus {
 }
 
 nav a:hover {
-  background-color: #1d4249;
-  color: #e3d3b3;
+  background-color: #b3e6e6;
 }
 
 nav a:active {
-  background-color: #2c626d;
-  color: #e3d3b3;
+  background-color: #d9f2f2;
 }
 
 nav li:first-child a {
@@ -174,6 +170,7 @@ main {
   max-width: 800px;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
+  color: #480a24;
   transition:
       border-left-color 150ms linear,
       border-right-color 150ms linear;
@@ -190,7 +187,7 @@ main {
   height: 350px;
   width: 100%;
   max-width: 350px;
-  outline: 4px solid #1d4249;
+  outline: 4px solid #194d4d;
   object-fit: cover;
 }
 
@@ -298,6 +295,11 @@ footer {
   margin: 0 auto;
   padding: 1rem 1.5rem;
   max-width: 800px;
+  color: #480a24;
+}
+
+footer * {
+  color: inherit;
 }
 
 footer a:focus {
@@ -306,7 +308,7 @@ footer a:focus {
 
 footer a:hover {
   text-decoration: none;
-  background-color: #1d4249;
+  background-color: #194d4d;
   color: #e3d3b3;
 }
 
