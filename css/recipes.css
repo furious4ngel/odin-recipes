@@ -85,7 +85,8 @@ header a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0 0.8rem;
+  padding-right: 0.8rem;
+  width: max-content;
   font-size: 1.6rem;
   font-weight: bold;
   text-decoration: none;
