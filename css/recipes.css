@@ -21,7 +21,7 @@ html {
 body {
   margin: 0;
   font: 16px / 1.5 serif;
-  background-color: #e3d3b3;
+  background-color: #eddaca;
 }
 
 .skip-link {
@@ -32,26 +32,26 @@ body {
   left: -3px;
   z-index: 3;
   text-decoration: none;
-  background-color: #e3d3b3;
+  background-color: #eddaca;
   border-radius: 3px;
   box-shadow: 0 5px 15px #00000036;
-  color: #480a24;
+  color: #42240b;
   transition: top 300ms ease-in-out;
 }
 
 .skip-link:focus {  
   top: -2px;
-  outline-color: #dbedf0;
+  outline-color: #42240b;
 }
 
 .skip-link:hover {
-  background-color: #194d4d;
-  color: #e3d3b3;
+  background-color: #d6abba;
+  color: #42240b;
 }
 
 .skip-link:active {
-  background-color: #2c626d;
-  color: #e3d3b3;
+  background-color: #ddbbc7;
+  color: #42240b;
 }
 
 header,
@@ -69,40 +69,29 @@ header {
   height: 3rem;
   padding: 0 1.5rem;
   position: sticky;
-  top: -48px;
+  top: -52px;
   left: 0;
   z-index: 2;
-  background-color: #480a24;
+  background-color: #ffffff;
   box-shadow: 0 5px 10px #00000026;
 }
 
 header .logo {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.5rem;
   padding: 0 0.8rem;
   font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
   font-weight: bold;
   text-decoration: none;
   white-space: nowrap;
-  color: #dbf3f3;
+  color: #774213;
 }
 
 header .logo:focus {
-  outline-color: #dbf3f3;
+  outline-color: #774213;
   outline-offset: -4px;
-}
-
-header .logo img {
-  transition:
-      transform
-      200ms
-      cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
-
-header .logo:hover img {
-  transform: rotate(38deg);
 }
 
 nav {
@@ -132,22 +121,22 @@ nav a {
   font-family: 'Playfair Display', serif;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #8cd9d9;
-  border: 1px solid #194d4d26;
-  color: #480a24;
+  background-color: #774213;
+  border: 1px solid #2c180736;
+  color: #ffffff;
 }
 
 nav a:focus {
-  outline-color: #480a24;
+  outline-color: #ffffff;
   outline-offset: -6px;
 }
 
 nav a:hover {
-  background-color: #b3e6e6;
+  background-color: #572f0f;
 }
 
 nav a:active {
-  background-color: #d9f2f2;
+  background-color: #42240b;
 }
 
 nav li:first-child a {
@@ -177,7 +166,7 @@ main {
   max-width: 800px;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
-  color: #480a24;
+  color: #42240b;
   transition:
       border-left-color 150ms linear,
       border-right-color 150ms linear;
@@ -209,7 +198,7 @@ h1 {
 .description img {
   width: 100%;
   max-width: 350px;
-  outline: 4px solid #194d4d;
+  outline: 4px solid #42240b;
   object-fit: cover;
 }
 
@@ -224,8 +213,8 @@ h1 {
   justify-content: center;
   padding: 1rem 0;
   width: 100%;
-  border-top: 1px solid #480a2463;
-  border-bottom: 1px solid #480a2463;
+  border-top: 1px solid #42240b63;
+  border-bottom: 1px solid #42240b63;
 }
 
 .recipe-details table {
@@ -242,7 +231,7 @@ h1 {
 }
 
 .recipe-details tr:not(:last-child) {
-  border-bottom: 1px solid #480a2463;
+  border-bottom: 1px solid #42240b63;
 }
 
 .recipe-details th,
@@ -279,7 +268,7 @@ h1 {
   margin-right: 5px;
   width: 18px;
   vertical-align: text-top;
-  background-color:  #480a24;
+  background-color:  #42240b;
   border-radius: 3px;
   -webkit-appearance: none;
   appearance: none;
@@ -289,22 +278,22 @@ h1 {
   content: '✔';
   position: absolute;
   font-family: sans-serif;
-  color: #80bfcb;
+  color: #e6ccd5;
   transform: translate(3px, 1px);
   -moz-transform: translate(2px, 0px);
 }
 
-.ingredients-and-steps ul input:hover {
-  background-color: #5e0d2f;
-}
-
 .ingredients-and-steps ul input:focus {
-  outline-color: #480a24;
+  outline-color: #42240b;
   outline-offset: 2px;
 }
 
+.ingredients-and-steps ul input:hover {
+  background-color: #572f0f;
+}
+
 .ingredients-and-steps ul input:active {
-  background-color: #75103a;
+  background-color: #6d3b12;
 }
 
 .ingredients-and-steps ol {
@@ -331,7 +320,7 @@ footer {
 
 footer p,
 .recipe-credit {
-  color: #480a24;
+  color: #42240b;
 }
 
 footer p {
@@ -340,18 +329,18 @@ footer p {
 }
 
 footer a:focus {
-  outline-color: #480a24;
+  outline-color: #42240b;
 }
 
 .recipe-credit:hover {
   text-decoration: none;
-  background-color: #194d4d;
-  color: #e3d3b3;
+  background-color: #d6abba;
+  color: #42240b;
 }
 
 .recipe-credit:active {
-  background-color: #2c626d;
-  color: #e3d3b3;
+  background-color: #ddbbc7;
+  color: #42240b;
 }
 
 .github-link {
@@ -376,7 +365,7 @@ footer a:focus {
 
 @media only screen and (min-width: 800px) {
   main {
-    border-left: 1px solid #480a2463;
-    border-right: 1px solid #480a2463;
+    border-left: 1px solid #42240b63;
+    border-right: 1px solid #42240b63;
   }
 }
