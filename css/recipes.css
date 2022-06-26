@@ -321,13 +321,16 @@ h1 {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 1rem 1.5rem;
   max-width: 800px;
 }
 
 footer p,
-footer a {
+.recipe-credit {
   color: #480a24;
 }
 
@@ -340,15 +343,35 @@ footer a:focus {
   outline-color: #480a24;
 }
 
-footer a:hover {
+.recipe-credit:hover {
   text-decoration: none;
   background-color: #194d4d;
   color: #e3d3b3;
 }
 
-footer a:active {
+.recipe-credit:active {
   background-color: #2c626d;
   color: #e3d3b3;
+}
+
+.github-link {
+  display: inline-block;
+  height: 32px;
+  border-radius: 50%;
+  transition:
+      transform 150ms ease-out;
+}
+
+.github-link:focus {
+  outline-offset: 4px;
+}
+
+.github-link:hover {
+  transform: rotate(-38deg);
+}
+
+.github-link:active {
+  opacity: 0.8;
 }
 
 @media only screen and (min-width: 800px) {
