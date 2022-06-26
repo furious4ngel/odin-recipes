@@ -76,12 +76,15 @@ header {
   box-shadow: 0 5px 10px #00000026;
 }
 
-header .logo {
+header h1 {
+  margin: 0;
+}
+
+header a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0 0.8rem;
-  font-family: 'Playfair Display', serif;
   font-size: 1.6rem;
   font-weight: bold;
   text-decoration: none;
@@ -89,7 +92,7 @@ header .logo {
   color: #774213;
 }
 
-header .logo:focus {
+header a:focus {
   outline-color: #774213;
   outline-offset: -4px;
 }
@@ -98,6 +101,12 @@ nav {
   position: sticky;
   top: -96px;
   z-index: 1;
+}
+
+nav h2 {
+  position: absolute;
+  top: -10000px;
+  left: -10000px;
 }
 
 nav ul {
@@ -179,7 +188,7 @@ th {
   font-family: 'Playfair Display', serif;
 }
 
-h1 {
+main h1 {
   margin-top: 0;
   text-align: center;
 }
