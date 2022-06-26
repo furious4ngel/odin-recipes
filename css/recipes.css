@@ -24,6 +24,36 @@ body {
   background-color: #e3d3b3;
 }
 
+.skip-link {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  position: absolute;
+  top: -40px;
+  left: -3px;
+  z-index: 3;
+  text-decoration: none;
+  background-color: #e3d3b3;
+  border-radius: 3px;
+  box-shadow: 0 5px 15px #00000036;
+  color: #480a24;
+  transition: top 300ms ease-in-out;
+}
+
+.skip-link:focus {  
+  top: -2px;
+  outline-color: #dbedf0;
+}
+
+.skip-link:hover {
+  background-color: #194d4d;
+  color: #e3d3b3;
+}
+
+.skip-link:active {
+  background-color: #2c626d;
+  color: #e3d3b3;
+}
+
 header,
 nav {
   transition:
@@ -143,7 +173,7 @@ nav a span {
 
 main {
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 1rem 1.5rem 0;
   max-width: 800px;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
@@ -161,6 +191,7 @@ th {
 }
 
 h1 {
+  margin-top: 0;
   text-align: center;
 }
 
