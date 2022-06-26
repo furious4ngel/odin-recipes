@@ -28,7 +28,7 @@ body {
   display: inline-block;
   padding: 0.3rem 1rem;
   position: absolute;
-  top: -60px;
+  top: -100px;
   left: -3px;
   z-index: 3;
   text-decoration: none;
