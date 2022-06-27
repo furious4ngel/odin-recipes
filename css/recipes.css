@@ -63,11 +63,8 @@ nav {
 }
 
 header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 3rem;
-  padding: 0 1.5rem;
+  padding: 0 0.7rem;
   position: sticky;
   top: -52px;
   left: 0;
@@ -77,26 +74,30 @@ header {
 }
 
 header h1 {
-  margin: 0;
-  width: 800px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+  background:
+      url('../img/hat-and-spoon.png')
+      100% -10px / 140px 120px
+      no-repeat;
 }
 
 header a {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding-right: 0.8rem;
-  width: max-content;
+  padding: 0 0.8rem;
   font-size: 1.3rem;
   font-weight: bold;
   text-decoration: none;
   white-space: nowrap;
-  color: #774213;
+  background-color: #ffffffb6;
+  color: #9f591a;
 }
 
 header a:focus {
-  outline-color: #774213;
-  outline-offset: -4px;
+  outline-color: #9f591a;
+  outline-offset: -2px;
 }
 
 nav {
