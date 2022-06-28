@@ -1,0 +1,15 @@
+body {
+  background:
+      linear-gradient(#eddaca, #ffffff 90%)
+      top left / 100% 100%
+      no-repeat;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+h2 {
+  text-align: center;
+}

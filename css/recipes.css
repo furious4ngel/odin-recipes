@@ -1,26 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display');
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-*:focus:not(:focus-visible) {
-  outline: none;
-}
-
-*:focus {
-  outline: 2px solid;
-}
-
-html {
-  min-width: 280px;
-}
-
 body {
-  margin: 0;
-  font: 16px / 1.5 serif;
   background-color: #eddaca;
 }
 
@@ -54,31 +32,7 @@ body {
   color: #42240b;
 }
 
-header,
-nav {
-  transition:
-    top
-    375ms
-    cubic-bezier(0.45, 0.05, 0.55, 0.95);
-}
-
-header {
-  height: 3rem;
-  padding: 0 0.7rem;
-  position: sticky;
-  top: -52px;
-  left: 0;
-  z-index: 2;
-  background-color: #ffffff;
-  box-shadow: 0 5px 10px #00000026;
-}
-
 header h1 {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  margin: 0 auto;
-  max-width: 800px;
   background:
       url('../img/hat-and-spoon.png')
       100% -10px / 140px 120px
@@ -86,24 +40,17 @@ header h1 {
 }
 
 header a {
-  padding: 0 0.8rem;
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-decoration: none;
-  white-space: nowrap;
   background-color: #ffffffe6;
-  color: #9f591a;
-}
-
-header a:focus {
-  outline-color: #9f591a;
-  outline-offset: -2px;
 }
 
 nav {
   position: sticky;
   top: -96px;
   z-index: 1;
+  transition:
+      top
+      375ms
+      cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
 nav h2 {
@@ -163,29 +110,17 @@ nav a span {
   transform: scale(1.25);
 }
 
-/* Interactive classes for header and nav */
-.show-header {
-  top: 0;
-}
-
-.show-nav {
-  top: 48px;
-}
-
 main {
   margin: 0 auto;
   padding: 1rem 1.5rem 0;
   max-width: 800px;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
-  color: #141414;
   transition:
       border-left-color 150ms linear,
       border-right-color 150ms linear;
 }
 
-h1,
-h2,
 h3,
 th {
   font-family: 'Playfair Display', serif;
@@ -322,12 +257,7 @@ main h1 {
 }
 
 footer {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
-  padding: 1rem 1.5rem;
-  max-width: 800px;
 }
 
 footer p,
@@ -353,26 +283,6 @@ footer a:focus {
 .recipe-credit:active {
   background-color: #ddbbc7;
   color: #42240b;
-}
-
-.github-link {
-  display: inline-block;
-  height: 32px;
-  border-radius: 50%;
-  transition:
-      transform 150ms ease-out;
-}
-
-.github-link:focus {
-  outline-offset: 4px;
-}
-
-.github-link:hover {
-  transform: rotate(-38deg);
-}
-
-.github-link:active {
-  opacity: 0.8;
 }
 
 @media only screen and (min-width: 800px) {

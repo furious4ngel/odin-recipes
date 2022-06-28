@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+*:focus {
+  outline: 2px solid;
+}
+
+html {
+  height: 100%;
+  min-width: 280px;
+}
+
+body {
+  margin: 0;
+  font: 16px / 1.5 serif;
+}
+
+header {
+  height: 3rem;
+  padding: 0 0.7rem;
+  position: sticky;
+  top: -52px;
+  left: 0;
+  z-index: 2;
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px #00000026;
+  transition:
+      top
+      375ms
+      cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+header a {
+  padding: 0 0.8rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #9f591a;
+}
+
+header a:focus {
+  outline-color: #9f591a;
+  outline-offset: -2px;
+}
+
+/* Interactive classes for header and nav */
+.show-header {
+  top: 0;
+}
+
+.show-nav {
+  top: 48px;
+}
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+
+main {
+  color: #141414;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  max-width: 800px;
+}
+
+.github-link {
+  display: inline-block;
+  height: 32px;
+  border-radius: 50%;
+  transition:
+      transform 150ms ease-out;
+}
+
+.github-link:focus {
+  outline-offset: 4px;
+}
+
+.github-link:hover {
+  transform: rotate(-38deg);
+}
+
+.github-link:active {
+  opacity: 0.8;
+}
