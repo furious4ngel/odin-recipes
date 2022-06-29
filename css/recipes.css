@@ -32,7 +32,7 @@ body {
   color: #42240b;
 }
 
-header h1 {
+header div {
   background:
       url('../img/hat-and-spoon.png')
       100% -5px / 140px 120px
