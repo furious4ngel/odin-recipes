@@ -1,4 +1,7 @@
 body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
   background:
       linear-gradient(#eddaca, #ffffff 90%)
       top left / 100% 100%
@@ -6,10 +9,20 @@ body {
 }
 
 main {
-  margin: 0 auto;
-  max-width: 800px;
+  flex: 1;
 }
 
 h2 {
   text-align: center;
+}
+
+footer {
+  justify-content: center;
+  width: 100%;
+}
+
+footer div {
+  height: 32px;
+  width: 800px;
+  text-align: right;
 }

@@ -76,7 +76,6 @@ h2 {
   font-family: 'Playfair Display', serif;
 }
 
-
 main {
   color: #141414;
 }
@@ -84,17 +83,14 @@ main {
 footer {
   display: flex;
   align-items: center;
-  margin: 0 auto;
   padding: 1rem 1.5rem;
-  max-width: 800px;
 }
 
 .github-link {
   display: inline-block;
   height: 32px;
   border-radius: 50%;
-  transition:
-      transform 150ms ease-out;
+  transition: transform 150ms ease-out;
 }
 
 .github-link:focus {
