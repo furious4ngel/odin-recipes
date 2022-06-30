@@ -42,6 +42,7 @@ header .hero-image::after {
   font-weight: bold;
   border-radius: 20px;
   box-shadow: 0 5px 10px #00000036;
+  color: #000;
   animation:
       1200ms
       ease-in-out
@@ -53,8 +54,7 @@ header .hero-image::before {
   content: 'simple';
   left: 0px;
   top: -8px;
-  background-color: #c26e21;
-  color: #ffffff;
+  background-color: #ce8c50;
   animation-name: float-up;
 }
 
@@ -63,7 +63,6 @@ header .hero-image::after {
   right: 10px;
   bottom: 15px;
   background-color: #e2ebf2;
-  color: #000;
   animation-name: float-down;
 }
 
