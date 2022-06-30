@@ -43,6 +43,7 @@ header .hero-image::after {
   border-radius: 20px;
   box-shadow: 0 5px 10px #00000036;
   color: #000;
+  outline: 2px solid #000000;
   animation:
       1200ms
       ease-in-out
