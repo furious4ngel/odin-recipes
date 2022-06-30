@@ -32,14 +32,14 @@ body {
   color: #42240b;
 }
 
-header div {
+.header-logo div {
   background:
       url('../img/hat-and-spoon.png')
       100% -5px / 140px 120px
       no-repeat;
 }
 
-header a {
+.header-logo a {
   background-color: #ffffffe6;
 }
 
@@ -110,6 +110,11 @@ nav a span {
   transform: scale(1.25);
 }
 
+/* Interactive class for header */
+.show-header {
+  top: 0;
+}
+
 main {
   margin: 0 auto;
   padding: 1rem 1.5rem 0;
@@ -151,8 +156,6 @@ main h1 {
 
 .description p {
   margin: 0;
-  max-width: 60ch;
-  font-style: italic;
 }
 
 .recipe-details {
@@ -269,7 +272,6 @@ footer p,
 
 footer p {
   margin: 0;
-  font-style: italic;
 }
 
 footer a:focus {

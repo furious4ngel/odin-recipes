@@ -25,7 +25,7 @@ body {
   font: 16px / 1.5 serif;
 }
 
-header {
+.header-logo {
   height: 3rem;
   padding: 0 0.7rem;
   position: sticky;
@@ -40,7 +40,7 @@ header {
       cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
-header div {
+.header-logo div {
   display: flex;
   align-items: center;
   height: 100%;
@@ -48,7 +48,8 @@ header div {
   max-width: 800px;
 }
 
-header a {
+
+.header-logo a {
   padding: 0 0.8rem;
   font-family: 'Playfair Display', serif;
   font-size: 1.3rem;
@@ -58,16 +59,12 @@ header a {
   color: #9f591a;
 }
 
-header a:focus {
+.header-logo a:focus {
   outline-color: #9f591a;
   outline-offset: -2px;
-}
+} 
 
-/* Interactive classes for header and nav */
-.show-header {
-  top: 0;
-}
-
+/* Interactive class for nav */
 .show-nav {
   top: 48px;
 }
@@ -79,6 +76,11 @@ h2 {
 
 main {
   color: #141414;
+}
+
+p {
+  font-style: italic;
+  max-width: 60ch;
 }
 
 footer {
