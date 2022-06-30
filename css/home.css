@@ -1,19 +1,97 @@
 body {
   display: flex;
-  height: 100%;
   flex-direction: column;
-  background:
+  height: 100%;
+  /* background:
       linear-gradient(#eddaca, #ffffff 90%)
       top left / 100% 100%
-      no-repeat;
+      no-repeat; */
+}
+
+header {
+  flex: none;
+  height: max-content;
+}
+
+header .hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+header .hero-text {
+  display: flex;
+  flex: 1 1 200px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header .hero-image {
+  position: relative;
+}
+
+header .hero-image::before,
+header .hero-image::after {
+  position: absolute;
+  font-family: 'Playfair Display', serif;
+  padding: 0.25rem 1rem;
+  font-weight: bold;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px #00000036;
+  animation:
+      1200ms
+      ease-in-out
+      infinite
+      alternate;
+}
+
+header .hero-image::before {
+  content: 'simple';
+  left: 0px;
+  top: -8px;
+  background-color: #c26e21;
+  color: #ffffff;
+  animation-name: float-up;
+}
+
+header .hero-image::after {
+  content: 'delicious';
+  right: 10px;
+  bottom: 15px;
+  background-color: #e2ebf2;
+  color: #000;
+  animation-name: float-down;
+}
+
+header img {
+  height: auto;
+  width: 100%;
+  max-width: 250px;
+}
+
+/* Interactive class for header logo */
+header .show-header {
+  top: 0;
 }
 
 main {
   flex: 1;
+  background:
+      linear-gradient(#eddaca, #ffffff 100%)
+      top left / 100% 100%
+      no-repeat;
 }
 
-h2 {
-  text-align: center;
+h1 {
+  margin: 0;
+}
+
+p {
+  margin-bottom: 0;
 }
 
 footer {
@@ -29,4 +107,24 @@ footer div {
   height: 32px;
   width: 800px;
   text-align: right;
+}
+
+@keyframes float-up {
+  to {
+    transform: translateY(0px);
+  }
+
+  from {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes float-down {
+  to {
+    transform: translateY(0px);
+  }
+
+  from {
+    transform: translateY(-10px);
+  }
 }
