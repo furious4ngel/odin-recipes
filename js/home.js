@@ -1,4 +1,4 @@
-const header = document.querySelector('header');
+const header = document.querySelector('.header-logo');
 let lastPosition = 0;
 
 document.addEventListener('scroll', () => {
