@@ -67,6 +67,11 @@ header .hero-image::after {
   animation-name: float-down;
 }
 
+header .hero-image:hover::before,
+header .hero-image:hover::after {
+  animation-play-state: paused;
+}
+
 header img {
   height: auto;
   width: 100%;
