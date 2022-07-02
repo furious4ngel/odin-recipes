@@ -69,13 +69,14 @@ body {
   top: 48px;
 }
 
-h1,
-h2 {
-  font-family: 'Playfair Display', serif;
-}
-
 main {
   color: #141414;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display', serif;
 }
 
 p {

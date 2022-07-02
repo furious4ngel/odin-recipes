@@ -126,11 +126,6 @@ main {
       border-right-color 150ms linear;
 }
 
-h3,
-th {
-  font-family: 'Playfair Display', serif;
-}
-
 main h1 {
   margin-top: 0;
   text-align: center;
@@ -190,6 +185,7 @@ main h1 {
 }
 
 .recipe-details th {
+  font-family: 'Playfair Display', serif;
   text-align: left;
 }
 
