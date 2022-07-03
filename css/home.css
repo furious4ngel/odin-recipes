@@ -90,10 +90,6 @@ header .show-header {
 
 main {
   flex: 1;
-  background:
-      linear-gradient(#eddaca, #ffffff 100%)
-      top left / 100% 100%
-      no-repeat;
 }
 
 h1 {
@@ -101,8 +97,69 @@ h1 {
   font-size: 3rem;
 }
 
-p {
-  margin-bottom: 0;
+.recipes {
+  padding: 1rem 1.5rem;
+}
+
+.recipes h2,
+.recipes h3,
+.recipes p {
+  margin: 0;
+}
+
+.recipes h2 {
+  width: 100%;
+}
+
+.recipes div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  margin: 0 auto;
+  padding-top: 1rem;
+  max-width: 800px;
+  border-top: 1px solid #42240b63;
+}
+
+.recipes article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+  padding: 0.5rem;
+  flex: 1 1 240px;
+  background-color: #eddaca;
+  border-radius: 3px;
+  outline: 1px solid #42240b63;
+}
+
+.recipes img {
+  height: 250px;
+  width: 100%;
+  border: 4px solid #141414;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.recipes a {
+  margin-top: auto;
+  text-decoration: underline;
+  color: #141414;
+}
+
+.recipes a:focus {
+  outline-color: #141414;
+}
+
+.recipes a:hover {
+  text-decoration: none;
+  background-color: #d6abba;
+  color: #42240b;
+}
+
+.recipes a:active {
+  background-color: #ddbbc7;
+  color: #42240b;
 }
 
 footer {
