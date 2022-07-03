@@ -80,8 +80,8 @@ nav a {
   font-family: 'Playfair Display', serif;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #9f591a;
-  border: 1px solid #2c180736;
+  background-color: #9a4c67;
+  border: 1px solid #44222e36;
   color: #ffffff;
 }
 
@@ -91,11 +91,11 @@ nav a:focus {
 }
 
 nav a:hover {
-  background-color: #572f0f;
+  background-color: #783b50;
 }
 
 nav a:active {
-  background-color: #42240b;
+  background-color: #552a39;
 }
 
 nav li:first-child a {
@@ -235,11 +235,11 @@ main h1 {
 }
 
 .ingredients-and-steps ul input:hover {
-  background-color: #572f0f;
+  background-color: #552a39;
 }
 
 .ingredients-and-steps ul input:active {
-  background-color: #6d3b12;
+  background-color: #783b50;
 }
 
 .ingredients-and-steps ol {
