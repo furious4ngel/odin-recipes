@@ -145,6 +145,7 @@ main h1 {
 .description img {
   width: 100%;
   max-width: 350px;
+  border-radius: 3px;
   outline: 4px solid #141414;
   object-fit: cover;
 }
