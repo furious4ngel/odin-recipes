@@ -25,6 +25,36 @@ body {
   font: 16px / 1.5 serif;
 }
 
+.skip-link {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  position: absolute;
+  top: -100px;
+  left: -3px;
+  z-index: 3;
+  background-color: #eddaca;
+  border-radius: 3px;
+  box-shadow: 0 5px 15px #00000036;
+  color: #42240b;
+  transition: top 300ms ease-in-out;
+}
+
+.skip-link:focus {  
+  top: 7px;
+  outline-color: #42240b;
+}
+
+.skip-link:hover {
+  text-decoration: none;
+  background-color: #d6abba;
+  color: #42240b;
+}
+
+.skip-link:active {
+  background-color: #ddbbc7;
+  color: #42240b;
+}
+
 .header-logo {
   height: 3rem;
   padding: 0 0.7rem;
