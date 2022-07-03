@@ -4,6 +4,10 @@ body {
   height: 100%;
 }
 
+.header-logo {
+  flex: none;
+}
+
 header {
   flex: none;
   height: max-content;
@@ -80,7 +84,7 @@ header img {
 }
 
 /* Interactive class for header logo */
-header .show-header {
+.show-header {
   top: 0;
 }
 
