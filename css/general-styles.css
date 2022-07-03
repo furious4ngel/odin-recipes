@@ -36,6 +36,7 @@ body {
   border-radius: 3px;
   box-shadow: 0 5px 15px #00000036;
   color: #42240b;
+  outline-offset: 0;
   transition: top 300ms ease-in-out;
 }
 
