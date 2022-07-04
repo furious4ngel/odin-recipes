@@ -114,6 +114,10 @@ main {
   width: 100%;
 }
 
+.recipes p {
+  font-style: italic;
+}
+
 .recipes div {
   display: flex;
   flex-wrap: wrap;

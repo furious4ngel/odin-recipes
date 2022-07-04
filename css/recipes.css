@@ -2,6 +2,10 @@ body {
   background-color: #eddaca;
 }
 
+p {
+  font-style: italic;
+}
+
 .header-logo div {
   background:
       url('../img/hat-and-spoon.png')
