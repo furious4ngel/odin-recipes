@@ -1,11 +1,13 @@
 body {
   display: flex;
+  align-items: center;
   flex-direction: column;
   height: 100%;
 }
 
 .header-logo {
   flex: none;
+  width: 100%;
 }
 
 header {
@@ -18,9 +20,9 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
-  padding: 1.5rem;
-  margin: 0 auto;
+  gap: 1rem 1.5rem;
+  padding: 1.5rem 0;
+  margin: 0 1.5rem;
   max-width: 800px;
 }
 
@@ -99,7 +101,7 @@ main {
 }
 
 .recipes {
-  padding: 1rem 1.5rem;
+  margin: 0 1.5rem;
 }
 
 .recipes h2,
@@ -116,8 +118,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem 1.5rem;
-  margin: 0 auto;
-  padding-top: 1rem;
+  padding: 1rem 0;
   max-width: 800px;
   border-top: 1px solid #42240b63;
 }
@@ -127,7 +128,7 @@ main {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.7rem;
-  padding: 0.5rem;
+  padding: 1rem;
   flex: 1 1 240px;
   background-color: #eddaca;
   border-radius: 3px;
@@ -165,7 +166,6 @@ main {
 
 footer {
   justify-content: center;
-  margin-top: 1.5rem;
   width: 100%;
 }
 
