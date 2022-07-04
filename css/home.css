@@ -100,17 +100,17 @@ main {
   flex: 1;
 }
 
+h2,
+h3 {
+  margin: 0;
+}
+
 .recipes {
   margin: 0 1.5rem;
 }
 
 .recipes h2,
-.recipes h3,
 .recipes p {
-  margin: 0;
-}
-
-.recipes h2 {
   width: 100%;
 }
 
@@ -167,6 +167,61 @@ main {
 .recipes a:active {
   background-color: #ddbbc7;
   color: #42240b;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 2rem;
+  width: 100%;
+  background-color: #d6abba;
+}
+
+.subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  justify-content: space-between;
+  margin: 0 1.5rem;
+  width: 800px;
+}
+
+.subscribe div {
+  flex: 1 1 200px;
+}
+
+.subscribe p {
+  margin: 0.25rem 0;
+}
+
+.subscribe form {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe button {
+  padding: 0.4rem 1.4rem;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  background-color: #e2ebf2;
+  border: 1px solid #20364663;
+  border-radius: 5px;
+  color: #141414;
+  cursor: pointer;
+}
+ 
+.subscribe button:focus {
+  outline-color: #203646;
+  outline-offset: -2px;
+}
+
+.subscribe button:hover {
+  background-color: #9cbbd3;
+}
+
+.subscribe button:active {
+  background-color: #79a3c3;
 }
 
 footer {
