@@ -165,9 +165,13 @@ main h1 {
 }
 
 .ingredients-and-steps {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 0 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.ingredients-and-steps section {
+  flex: 1 1 220px;
 }
 
 .ingredients-and-steps ul,
