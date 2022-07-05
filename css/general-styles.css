@@ -34,7 +34,6 @@ body {
   position: absolute;
   top: -100px;
   left: -3px;
-  z-index: 3;
   background-color: #eddaca;
   border-radius: 3px;
   box-shadow: 0 5px 15px #00000036;

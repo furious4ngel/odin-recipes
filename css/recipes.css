@@ -6,6 +6,10 @@ p {
   font-style: italic;
 }
 
+.skip-link {
+  z-index: 3;
+}
+
 .header-logo {
   z-index: 2;
 }
