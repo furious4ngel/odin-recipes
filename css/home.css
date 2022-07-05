@@ -57,7 +57,7 @@ header {
   box-shadow: 0 5px 10px #00000036;
   color: #141414;
   border: 2px solid #141414;
-  border-radius: 3px;
+  border-radius: 6px;
   animation:
       1200ms
       ease-in-out
@@ -130,14 +130,14 @@ h3,
   flex: 1 1 240px;
   background-color: #eddaca;
   border: 1px solid #42240b63;
-  border-radius: 3px;
+  border-radius: 6px;
 }
 
 .recipes img {
   height: 220px;
   width: 100%;
   border: 4px solid #141414;
-  border-radius: 3px;
+  border-radius: 6px;
   object-fit: cover;
 }
 
@@ -206,7 +206,7 @@ aside {
   font-weight: bold;
   background-color: #e2ebf2;
   border: 1px solid #20364663;
-  border-radius: 5px;
+  border-radius: 6px;
   color: #141414;
   cursor: pointer;
 }
