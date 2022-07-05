@@ -1,9 +1,7 @@
 body {
+  display: flex;
+  flex-direction: column;
   background-color: #eddaca;
-}
-
-p {
-  font-style: italic;
 }
 
 .skip-link {
@@ -35,12 +33,6 @@ nav {
       cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
-nav h2 {
-  position: absolute;
-  top: -10000px;
-  left: -10000px;
-}
-
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -64,11 +56,11 @@ nav a {
   white-space: nowrap;
   background-color: #9a4c67;
   border: 1px solid #44222e36;
-  color: #ffffff;
+  color: #fff;
 }
 
 nav a:focus {
-  outline-color: #ffffff;
+  outline-color: #fff;
   outline-offset: -6px;
 }
 
@@ -92,12 +84,17 @@ nav a span {
   transform: scale(1.25);
 }
 
-/* Interactive class for header */
-.show-header {
-  top: 0;
+main {
+  flex: 1;
+  width: 100%;
 }
 
-main {
+main h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+main article {
   margin: 0 auto;
   padding: 1rem 1.5rem 0;
   max-width: 800px;
@@ -108,20 +105,11 @@ main {
       border-right-color 150ms linear;
 }
 
-main h1 {
-  margin-top: 0;
-  text-align: center;
-}
-
 .description {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 1rem;
-}
-
-.description h2 {
-  margin: 0;
 }
 
 .description img {
@@ -132,8 +120,13 @@ main h1 {
   object-fit: cover;
 }
 
+.description h2,
 .description p {
   margin: 0;
+}
+
+.description p {
+  font-style: italic;
 }
 
 .recipe-details {
@@ -242,10 +235,8 @@ main h1 {
   font-weight: bold;
 }
 
-footer {
+footer div {
   justify-content: space-between;
-  margin: 0 auto;
-  max-width: 800px;
 }
 
 footer p,
@@ -273,7 +264,7 @@ footer a:focus {
 }
 
 @media only screen and (min-width: 800px) {
-  main {
+  main article {
     border-left: 1px solid #42240b63;
     border-right: 1px solid #42240b63;
   }

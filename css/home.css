@@ -9,14 +9,11 @@ body {
 
 .header-logo {
   flex: none;
-  width: 100%;
   z-index: 1;
 }
 
 header {
   align-self: center;
-  flex: none;
-  height: max-content;
   color: #141414;
 }
 
@@ -59,8 +56,8 @@ header {
   font-weight: bold;
   border-radius: 3px;
   box-shadow: 0 5px 10px #00000036;
-  color: #000;
-  outline: 2px solid #000000;
+  color: #141414;
+  outline: 2px solid #141414;
   animation:
       1200ms
       ease-in-out
@@ -114,15 +111,6 @@ h3,
   margin: 0 1.5rem;
 }
 
-.recipes h2,
-.recipes p {
-  width: 100%;
-}
-
-.recipes p {
-  font-style: italic;
-}
-
 .recipes div {
   display: flex;
   flex-wrap: wrap;
@@ -135,8 +123,7 @@ h3,
 
 .recipes article {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-wrap: wrap;
   gap: 0.7rem;
   padding: 1rem;
   flex: 1 1 240px;
@@ -146,16 +133,24 @@ h3,
 }
 
 .recipes img {
-  height: 250px;
+  height: 220px;
   width: 100%;
   border: 4px solid #141414;
   border-radius: 3px;
   object-fit: cover;
 }
 
+.recipes h2,
+.recipes p {
+  width: 100%;
+}
+
+.recipes p {
+  font-style: italic;
+}
+
 .recipes a {
   margin-top: auto;
-  text-decoration: underline;
   color: #141414;
 }
 
@@ -187,7 +182,6 @@ aside {
   display: flex;
   flex-wrap: wrap;
   gap: 0.25rem 1rem;
-  justify-content: space-between;
   margin: 0 1.5rem;
   width: 800px;
 }
@@ -229,15 +223,8 @@ aside {
   background-color: #79a3c3;
 }
 
-footer {
-  justify-content: center;
-  width: 100%;
-}
-
 footer div {
-  height: 32px;
-  width: 800px;
-  text-align: right;
+  justify-content: flex-end;
 }
 
 @keyframes float-up {
