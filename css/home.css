@@ -123,6 +123,7 @@ h3,
 
 .recipes article {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   gap: 0.7rem;
   padding: 1rem;
