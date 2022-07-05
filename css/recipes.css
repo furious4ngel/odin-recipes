@@ -6,6 +6,10 @@ p {
   font-style: italic;
 }
 
+.header-logo {
+  z-index: 2;
+}
+
 .header-logo div {
   background:
       url('../img/hat-and-spoon.png')
