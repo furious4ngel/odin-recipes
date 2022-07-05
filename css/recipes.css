@@ -189,30 +189,37 @@ main article {
 }
 
 .ingredients-and-steps ul input {
-  height: 20px;
+  position: relative;
+  height: 18px;
   margin-right: 5px;
-  width: 20px;
-  vertical-align: -4px;
-  background: #141414;
-  border: 1px solid #141414;
+  width: 18px;
+  vertical-align: text-top;
+  background-color:  #141414;
   border-radius: 3px;
   -webkit-appearance: none;
   appearance: none;
 }
 
-.ingredients-and-steps ul input:checked {
-  background:
-      url('../img/check-mark.png'),
-      #141414;
-  background-position: 50% 50%, center center;
-  background-size: 12px 12px, auto auto;
-  background-repeat: no-repeat, no-repeat;
-  border-color: #141414;
+.ingredients-and-steps ul input:checked::before {
+  content: '✔';
+  position: absolute;
+  font-family: sans-serif;
+  color: #e6ccd5;
+  transform: translate(3px, 1px);
+  -moz-transform: translate(2px, 0px);
 }
 
 .ingredients-and-steps ul input:focus {
   outline-color: #141414;
   outline-offset: 2px;
+}
+
+.ingredients-and-steps ul input:hover {
+  background-color: #552a39;
+}
+
+.ingredients-and-steps ul input:active {
+  background-color: #783b50;
 }
 
 .ingredients-and-steps ol {
