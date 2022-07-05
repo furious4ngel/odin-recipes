@@ -42,20 +42,20 @@ body {
   transition: top 300ms ease-in-out;
 }
 
-.skip-link:focus {  
+.skip-link:focus {
   top: 7px;
-  outline-color: #42240b;
+  outline-color: #141414;
 }
 
 .skip-link:hover {
   text-decoration: none;
   background-color: #d6abba;
-  color: #42240b;
+  color: #141414;
 }
 
 .skip-link:active {
   background-color: #ddbbc7;
-  color: #42240b;
+  color: #141414;
 }
 
 .header-logo {
