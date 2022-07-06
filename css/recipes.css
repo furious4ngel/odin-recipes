@@ -171,7 +171,7 @@ main article {
   gap: 0 2rem;
 }
 
-.ingredients-and-steps section {
+.ingredients-and-steps > section {
   flex: 1 1 220px;
 }
 
@@ -245,7 +245,7 @@ footer div {
 }
 
 footer p,
-.recipe-credit {
+footer a {
   color: #141414;
 }
 
@@ -257,13 +257,13 @@ footer a:focus {
   outline-color: #141414;
 }
 
-.recipe-credit:hover {
+footer p a:hover {
   text-decoration: none;
   background-color: #d6abba;
   color: #42240b;
 }
 
-.recipe-credit:active {
+footer p a:active {
   background-color: #ddbbc7;
   color: #42240b;
 }
