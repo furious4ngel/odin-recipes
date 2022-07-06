@@ -81,7 +81,16 @@ nav li:last-child a {
 }
 
 nav a span {
-  transform: scale(1.25);
+  transform: scale(1.25) translateX(0);
+  transition: transform 200ms ease-in-out;
+}
+
+nav li:first-child a:hover span {
+  transform: scale(1.25) translateX(-3px);
+}
+
+nav li:last-child a:hover span {
+  transform: scale(1.25) translateX(3px);
 }
 
 main {

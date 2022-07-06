@@ -168,6 +168,12 @@ section a:active {
 
 section a span {
   vertical-align: -7px;
+  transform: translateX(-4px);
+  transition: transform 200ms ease-in-out;
+}
+
+section a:hover span {
+  transform: translateX(0);
 }
 
 aside {
