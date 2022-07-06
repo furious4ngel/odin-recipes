@@ -189,24 +189,29 @@ main article {
 }
 
 .ingredients-and-steps ul input {
-  position: relative;
   height: 18px;
   margin-right: 5px;
   width: 18px;
   vertical-align: text-top;
-  background-color:  #141414;
+  background: #141414;
   border-radius: 3px;
   -webkit-appearance: none;
   appearance: none;
 }
 
-.ingredients-and-steps ul input:checked::before {
-  content: '✔';
-  position: absolute;
-  font-family: sans-serif;
-  color: #e6ccd5;
-  transform: translate(3px, 1px);
-  -moz-transform: translate(2px, 0px);
+.ingredients-and-steps ul input:checked {
+  background:
+      url('../img/check-mark.png'),
+      #141414;
+  background-position:
+      50% 50%,
+      top left;
+  background-size:
+      10px 10px,
+      contain;
+  background-repeat:
+      no-repeat,
+      no-repeat;
 }
 
 .ingredients-and-steps ul input:focus {
