@@ -184,8 +184,10 @@ main article {
   flex: 1 1 220px;
 }
 
-.ingredients-and-steps li:not(:last-child) {
-  margin-bottom: 1rem;
+.ingredients-and-steps ul,
+.ingredients-and-steps ol {
+  margin: 0;
+  padding: 0;
 }
 
 .ingredients-and-steps ul li::before,
@@ -193,9 +195,11 @@ main article {
   font-weight: bold;
 }
 
+.ingredients-and-steps li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .ingredients-and-steps ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
@@ -204,12 +208,8 @@ main article {
   margin-right: 8px;
 }
 
-.ingredients-and-steps ol {
-  padding-left: 1rem;
-}
-
 .ingredients-and-steps ol li {
-  padding-left: 0.4rem;
+  list-style-position: inside;
 }
 
 .ingredients-and-steps ol li::marker {
