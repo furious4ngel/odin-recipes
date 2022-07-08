@@ -208,17 +208,15 @@ main article {
 }
 
 .ingredients-and-steps ol {
-  margin: 0 0 0 1rem;
-  padding: 0;
+  padding-left: 1rem;
 }
 
 .ingredients-and-steps ol li {
-  padding-left: 5px;
+  padding-left: 0.4rem;
 }
 
 .ingredients-and-steps ol li::marker {
   font-family: "Playfair Display", serif;
-  font-weight: bold;
 }
 
 footer div {
