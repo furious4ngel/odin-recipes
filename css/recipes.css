@@ -1,6 +1,4 @@
 body {
-  display: flex;
-  flex-direction: column;
   background-color: #eddaca;
 }
 
@@ -91,11 +89,6 @@ nav li:first-child a:hover span {
 
 nav li:last-child a:hover span {
   transform: scale(1.25) translateX(3px);
-}
-
-main {
-  flex: 1;
-  width: 100%;
 }
 
 main h1 {
@@ -227,10 +220,6 @@ footer a {
 
 footer p {
   margin: 0;
-}
-
-footer a:focus {
-  outline-color: #141414;
 }
 
 footer p a:hover {

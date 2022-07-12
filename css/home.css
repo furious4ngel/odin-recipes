@@ -1,14 +1,8 @@
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 .skip-link {
   z-index: 2;
 }
 
 .header-logo {
-  flex: none;
   z-index: 1;
 }
 
@@ -85,15 +79,6 @@ header {
   height: auto;
   width: 100%;
   max-width: 250px;
-}
-
-/* Interactive class for header logo */
-.show-header {
-  top: 0;
-}
-
-main {
-  flex: 1;
 }
 
 h2,
